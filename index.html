@@ -49,7 +49,7 @@
               <h3 class="hello">Hello, my name is <span class="name">César Pérez</span> </h3>
               <h3 class="my-profession">I'm a <span class="typing">Web Frontend Developer</span></h3>
               <p>I'm a Frontend Dev expert in creating high performance applications with a clean and organized architecture, and many more...</p>
-              <a href="#c" class="btn">Download CV</a>
+              <a href="./images/DevCesarPerez.pdf" download class="btn">Download CV</a>
             </div>
             <div class="home-img padd-15">
               <img src="images/Hereo.jpg" alt="">
@@ -415,39 +415,44 @@
                 <h3 class="contact-title padd-15">Send me an Email</h3>
                 <h4 class="contact-sub-title padd-15">if you are interest in know more about me</h4>
                 <!-- ======== Contact Form ======= -->
-                <div class="contact-form padd-15">
-                  <div class="row">
-                    <div class="form-item col-6 padd-15">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
+                <form action="https://formsubmit.co/4eedc7eb2ba84c0133311276957b9e04" method="POST" />
+                    <div class="contact-form padd-15">
+                      <div class="row">
+                        <div class="form-item col-6 padd-15">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="form-item col-6 padd-15">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-item col-12 padd-15">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="Subject" placeholder="Subject">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-item col-12 padd-15">
+                          <div class="form-group">
+                            <textarea name="message" class="form-control" id="" placeholder="Message"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-item col-12 padd-15">
+                          <button type="submit" class="btn">Send Message</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="form-item col-6 padd-15">
-                      <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-item col-12 padd-15">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-item col-12 padd-15">
-                      <div class="form-group">
-                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-item col-12 padd-15">
-                      <button type="submit" class="btn">Send Message</button>
-                    </div>
-                  </div>
-                </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/#home">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                
               </div>
             </section>
             <!-- ======== Contact Section End ========= -->
